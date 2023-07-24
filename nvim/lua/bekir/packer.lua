@@ -13,7 +13,11 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
- use 'marko-cerovac/material.nvim'
+use { "catppuccin/nvim", as = "catppuccin" }
+
+use {
+    "williamboman/mason.nvim",
+}
 
  use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
  use('nvim-treesitter/playground')
@@ -23,10 +27,14 @@ return require('packer').startup(function(use)
  use {
 	 'nvim-tree/nvim-tree.lua',
 	 requires = {
-		 'nvim-tree/nvim-web-devicons', -- optional
+		 'nvim-tree/nvim-web-devicons',
 	 },
 	 config = function()
-		 require("nvim-tree").setup {}
+		 require("nvim-tree").setup({
+			git = {
+				ignore = false,
+			  }
+		 })
 	 end
  }
 
