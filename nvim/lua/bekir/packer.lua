@@ -48,6 +48,7 @@ use {
 		 })
 	 end
  }
+ use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
 
  use "sindrets/diffview.nvim" 
  use("folke/zen-mode.nvim")
