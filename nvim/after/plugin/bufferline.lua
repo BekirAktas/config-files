@@ -11,8 +11,8 @@ options = {
     },
   },
 }
-vim.keymap.set('n', 'bc', '<CMD>BufferLinePick<CR>')
-vim.keymap.set('n', '<leader>ts', '<CMD>BufferLinePickClose<CR>')
+vim.keymap.set('n', '<leader>pc', '<CMD>BufferLinePick<CR>')
+vim.keymap.set('n', '<leader>w', '<CMD>BufferLinePickClose<CR>')
 vim.keymap.set('n', '<S-l>', '<CMD>BufferLineCycleNext<CR>')
 vim.keymap.set('n', '<S-h>', '<CMD>BufferLineCyclePrev<CR>')
 vim.keymap.set('n', 'gs', '<CMD>BufferLineSortByDirectory<CR>')
