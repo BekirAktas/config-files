@@ -19,5 +19,6 @@ lsp.ensure_installed({
     'tsserver',
     'eslint',
     'gopls',
+    'omnisharp',
 })
 lsp.setup()
