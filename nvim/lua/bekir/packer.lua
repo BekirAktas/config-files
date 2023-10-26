@@ -15,6 +15,8 @@ return require('packer').startup(function(use)
 
 use { "catppuccin/nvim", as = "catppuccin" }
 
+use 'karb94/neoscroll.nvim'
+
 use {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v2.x',
