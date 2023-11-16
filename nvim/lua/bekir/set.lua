@@ -44,3 +44,5 @@ opt.sidescrolloff = 5 -- Minimum number of screen columns to keep to cursor righ
 opt.timeoutlen = 500 -- Time in milliseconds to wait for a mapped sequence to complete.
 opt.ttimeoutlen = 0 -- Time in milliseconds to wait for a key code sequence to complete.
 opt.updatetime = 500 -- Trigger CursorHold event faster.pt.updatetime = 50
+--cmd.colorscheme('catppuccin')
+

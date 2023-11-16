@@ -19,6 +19,7 @@ require("catppuccin").setup({
         ['@tag.tsx'] = { fg = colors.red },
         ['@string.scss'] = { fg = colors.orange },
         ['@type.definition.scss'] = { fg = colors.blue },
+        ['@tag.js'] = { fg = colors.red }
       }
     end,
   },
