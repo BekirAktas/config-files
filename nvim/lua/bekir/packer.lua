@@ -13,6 +13,8 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+use 'terryma/vim-multiple-cursors'
+
 use { "catppuccin/nvim", as = "catppuccin" }
 
 use 'karb94/neoscroll.nvim'
@@ -34,10 +36,23 @@ use {
     }
 }
 
+use 'tpope/vim-commentary'
+
+use({
+    "kylechui/nvim-surround",
+    tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+    config = function()
+        require("nvim-surround").setup({
+            -- Configuration here, or leave empty to use defaults
+        })
+    end
+})
+
 use {
   "windwp/nvim-autopairs",
   config = function() require("nvim-autopairs").setup {} end
 }
+
  use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
  use('nvim-treesitter/playground')
  use('theprimeagen/harpoon')

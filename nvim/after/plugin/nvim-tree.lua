@@ -32,6 +32,7 @@ local function on_attach(bufnr)
     nvim_tree_api.node.open.vertical,
     opts('Open: Vertical Split')
   )
+
   vim.keymap.set(
     'n',
     '<C-t>',

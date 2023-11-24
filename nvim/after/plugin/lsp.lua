@@ -20,5 +20,7 @@ lsp.ensure_installed({
     'eslint',
     'gopls',
     'omnisharp',
+    'phpactor',
+    'intelephense'
 })
 lsp.setup()
