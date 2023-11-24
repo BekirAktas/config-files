@@ -37,7 +37,19 @@ use {
 }
 
 use 'tpope/vim-commentary'
-
+use {
+  "tpope/vim-dadbod"
+  -- config = require ("config/vim-dadbod")
+}
+ 
+use { 'vim-airline/vim-airline' }
+use {
+  "kristijanhusak/vim-dadbod-ui"
+  -- config = require ("config/vim-dadbod-ui")
+}
+use {
+  "kristijanhusak/vim-dadbod-completion"
+}
 use({
     "kylechui/nvim-surround",
     tag = "*", -- Use for stability; omit to use `main` branch for the latest features
