@@ -7,17 +7,18 @@ local luasnip = require('luasnip')
       luasnip.lsp_expand(args.body)
     end,
   },
+  preselect = 'none',
   completion = {
-    completeopt = 'menu,menuone,noinsert',
+    completeopt = 'menu,menuone,noinsert,noselect',
   },
   mapping = {
  ['<Tab>'] = cmp.mapping(function(fallback)
       local function has_words_before()
-        local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+        local line, col = unpack(vim.api.nvim_win_get_cursor(-1))
 
         return col ~= 0
           and vim.api
-              .nvim_buf_get_lines(0, line - 1, line, true)[1]
+              .nvim_buf_get_lines(0, line - 1, line, true)[0]
               :sub(col, col)
               :match('%s')
             == nil
