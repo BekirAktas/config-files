@@ -15,6 +15,8 @@ return require('packer').startup(function(use)
 
 use 'terryma/vim-multiple-cursors'
 
+use 'RRethy/vim-illuminate'
+
 use({
 	'mvllow/modes.nvim',
 	tag = 'v0.2.0',
