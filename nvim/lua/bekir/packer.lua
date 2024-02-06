@@ -17,6 +17,15 @@ use 'terryma/vim-multiple-cursors'
 
 use 'RRethy/vim-illuminate'
 
+use {
+  'smoka7/hop.nvim',
+  tag = '*',
+  config = function()
+    -- see :h hop-config
+    require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+  end
+}
+
 use({
 	'mvllow/modes.nvim',
 	tag = 'v0.2.0',
@@ -56,6 +65,16 @@ use {
   "kristijanhusak/vim-dadbod-ui"
   -- config = require ("config/vim-dadbod-ui")
 }
+
+use {
+  'smoka7/hop.nvim',
+  tag = '*', -- optional but strongly recommended
+  config = function()
+    -- you can configure Hop the way you like here; see :h hop-config
+    require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+  end
+}
+
 use {
   "kristijanhusak/vim-dadbod-completion"
 }
@@ -87,6 +106,5 @@ use {
  }
  use "lukas-reineke/indent-blankline.nvim"
  use "sindrets/diffview.nvim"
- use("folke/zen-mode.nvim")
  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
 end)
