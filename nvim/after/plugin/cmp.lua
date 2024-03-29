@@ -14,7 +14,7 @@ local luasnip = require('luasnip')
   mapping = {
  ['<Tab>'] = cmp.mapping(function(fallback)
       local function has_words_before()
-        local line, col = unpack(vim.api.nvim_win_get_cursor(-1))
+        local line, col = unpack(vim.api.nvim_win_get_cursor(0))
 
         return col ~= 0
           and vim.api

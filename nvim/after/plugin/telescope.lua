@@ -4,7 +4,11 @@ local telescope = require('telescope')
 local actions = require('telescope.actions')
 local map_opts = { silent = true }
 
-vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
+
+vim.keymap.set('n', '<leader>pf', function()
+    builtin.find_files({ hidden = true })
+end, { silent = true })
+
 vim.keymap.set('n', 'C-p', builtin.git_files, {})
 -- vim.keymap.set('n', '<leader>ps', function()
 -- 	builtin.grep_string({ search = vim.fn.input("Grep > ") });

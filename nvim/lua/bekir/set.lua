@@ -3,7 +3,13 @@ local cmd = vim.cmd
 local env = vim.env
 
 opt.guicursor = ""
-
+cmd('hi Normal guibg=NONE ctermbg=NONE')
+cmd('hi SignColumn guibg=NONE')
+cmd('hi NormalNC guibg=NONE')
+cmd('hi MsgArea guibg=NONE')
+cmd('hi TelescopeBorder guibg=NONE')
+cmd('hi NvimTreeNormal guibg=NONE')
+cmd('hi NvimTreeNormalNC guibg=NONE')
 opt.termguicolors = true -- Enables 24-bit RGB color support.
 
 opt.nu = true
