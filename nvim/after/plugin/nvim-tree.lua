@@ -118,6 +118,7 @@ nvim_tree.setup({
   actions = {
     open_file = {
       resize_window = true,
+      quit_on_open = true
     },
   },
   view = {
@@ -165,4 +166,6 @@ nvim_tree.setup({
 
 vim.api.nvim_set_keymap('n', '<Space>e', '<Cmd>NvimTreeFindFile<CR>z.', {noremap = true})
 keymap.set('n', '<Space>b', '<Cmd>NvimTreeToggle<CR>', { silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>bf', '<C-w>w', { noremap = true })
+
 

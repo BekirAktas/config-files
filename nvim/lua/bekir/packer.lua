@@ -26,6 +26,19 @@ use {
 }
 
 use({
+  "jackMort/ChatGPT.nvim",
+    config = function()
+      require("chatgpt").setup()
+    end,
+    requires = {
+      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+      "folke/trouble.nvim",
+      "nvim-telescope/telescope.nvim"
+    }
+})
+
+use({
 	'mvllow/modes.nvim',
 	tag = 'v0.2.0',
 	config = function()
@@ -90,6 +103,14 @@ use({
 use {
   "windwp/nvim-autopairs",
   config = function() require("nvim-autopairs").setup {} end
+}
+
+
+use {
+  'VonHeikemen/fine-cmdline.nvim',
+  requires = {
+    {'MunifTanjim/nui.nvim'}
+  }
 }
 
  use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})

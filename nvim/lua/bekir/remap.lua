@@ -9,3 +9,5 @@ vim.keymap.set("n", "<leader>cf", "oconst functionName = async (params) => {<CR>
 vim.keymap.set("n", "<leader>tc", "otry{<CR>}<ESC>acatch(e){<CR>}<ESC>Othrow new Error(e)")
 vim.keymap.set("n", "<leader>if", "oif(condition){<CR>}")
 vim.keymap.set("n", "<leader>tne", "othrow new Error('')<ESC>")
+vim.keymap.set('n', ':', '<cmd>FineCmdline<CR>', {noremap = true})
+
